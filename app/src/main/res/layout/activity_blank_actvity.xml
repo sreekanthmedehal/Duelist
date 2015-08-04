@@ -1,0 +1,634 @@
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sreekanth.duelist.BlankActvity" 
+     android:background="@android:color/darker_gray" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+           
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:background="@android:color/background_light" android:layout_marginTop="5dp" 
+        >
+     <Button
+                android:id="@+id/button4"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Benifits" />
+
+            <Button
+                android:id="@+id/button3"
+                 android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Eligibility" />
+            
+        <ImageButton
+		android:id="@+id/album_overflow"
+		android:layout_width="34dp"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|right"
+		android:scaleType="center" 
+		android:src="@drawable/ic_action_overflow"/>
+            
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:background="@android:color/background_light" android:layout_marginTop="5dp" 
+        >
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" android:hint="Enter Name"/>
+    
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:background="@android:color/background_light"  
+        >
+    <EditText
+        android:id="@+id/editText3a"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" android:hint="Email Id"/>
+    
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:background="@android:color/background_light"  
+        >
+    <EditText
+        android:id="@+id/editText3b"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" android:hint="Mobile No."/>
+    
+    </LinearLayout>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:background="@android:color/background_light" android:layout_marginTop="5dp" >
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:ems="10" android:hint="Date Of Birth"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Date" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:background="@android:color/background_light" >
+    <TextView
+        
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Plan   "/>
+   <TextView
+        android:id="@+id/txtplan"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+   
+    </LinearLayout>
+    
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:background="@android:color/background_light" >
+   <TextView
+         android:layout_width="0dip"
+          android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Age" />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" android:hint =" 8 - 55 years" 
+        android:ems="12" android:inputType="number"/>
+</LinearLayout>
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" >
+   <TextView
+         android:layout_width="0dip"
+          android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Term" />
+    <EditText
+        android:id="@+id/spinner2"
+          android:layout_width="0dip"
+          android:layout_weight="1"
+        android:layout_height="wrap_content" android:hint=" 12 -35 years"
+        android:ems="12" />
+</LinearLayout>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" >
+   <TextView
+         android:layout_width="0dip"
+          android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="PPT" />
+    <EditText
+        android:id="@+id/editTextppt"
+          android:layout_width="0dip"
+          android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:ems="12" />
+</LinearLayout>
+ 
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:background="@android:color/background_light" >
+  <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="SA" />  
+    
+ <EditText
+     android:id="@+id/editText1"
+     android:layout_width="0dip"
+     android:layout_weight="1"
+     android:layout_height="wrap_content"
+     android:ems="12" 
+     android:hint="Sum Assured (Min 100000)"
+      android:inputType="number">
+     <requestFocus />
+ </EditText>
+</LinearLayout>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:background="@android:color/background_light" android:layout_marginTop="5dp">
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="0dip" android:layout_weight="1"   
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgtoggle"
+        android:button="@null"
+        android:textOff=""
+        android:textOn=""/>
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="AB Required"/>
+</LinearLayout>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:background="@android:color/background_light" >
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="0dip" android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgtoggle"
+        android:button="@null"
+        android:textOff=""
+        android:textOn=""/>
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Health Extra"/>
+</LinearLayout>
+
+
+
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:background="@android:color/background_light" >
+    <ToggleButton
+        android:id="@+id/toggleButton4"
+        android:layout_width="0dip" android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgtoggle"
+        android:button="@null"
+        android:textOff=""
+        android:textOn="" android:checked="true"
+         />
+    <TextView
+        android:id="@+id/mixingtext"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="MIXING ON"/>
+</LinearLayout>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:background="@android:color/background_light" >
+    <EditText
+        android:id="@+id/editTextbonusrate"
+        android:layout_width="0dip" android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Bonus"/>
+</LinearLayout>
+
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="5dp">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" android:layout_marginTop="5dp">
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Premium Note" android:gravity="center"/>
+    
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"/>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@android:color/background_light">
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text=""/>
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="(First Prem)"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="(Ren.Prem)"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"  
+        android:layout_height="1dp"/>
+<LinearLayout
+        android:layout_width="fill_parent" android:id="@+id/ylylayout"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" >
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Yearly"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dip"
+          android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/textView1a"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"  
+        android:layout_height="1dp"/>
+<LinearLayout
+        android:layout_width="fill_parent" android:id="@+id/hlylayout"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" >
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Half Yearly"/>
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:id="@+id/textView2"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:id="@+id/textView2a"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"  
+        android:layout_height="1dp"/>
+<LinearLayout
+        android:layout_width="fill_parent" android:id="@+id/qlylayout"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" >
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Qly "/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:id="@+id/textView3a"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"  
+        android:layout_height="1dp"/>
+<LinearLayout
+        android:layout_width="fill_parent" android:id="@+id/mlylayout"
+        android:layout_height="wrap_content" android:background="@android:color/background_light">
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Mly/ECS "/>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:id="@+id/textView4a"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>
+<View
+        android:layout_width="fill_parent" 
+        android:layout_height="1dp"/>
+<LinearLayout
+        android:layout_width="fill_parent" android:id="@+id/ssslayout"
+        android:layout_height="wrap_content" android:background="@android:color/background_light">
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="SSS "/>
+    <TextView
+        android:id="@+id/textView5"
+          android:layout_width="0dip"
+          android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+     <TextView
+         android:layout_width="0dip"
+         android:layout_weight="1"
+        android:id="@+id/textView5a"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>
+<View
+     android:layout_width="fill_parent"
+          
+        android:layout_height="1dp"/>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" android:layout_marginTop="5dp">
+     <Button
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" 
+        android:text="Yly"/>
+    <Button
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Hly"
+         />
+     <Button
+         android:layout_width="0dip"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:text="Qly"
+         />
+     <Button
+         android:layout_width="0dip"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:text="Mly"
+         />
+      <Button
+         android:layout_width="0dip"
+         android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="SSS"
+         />
+</LinearLayout>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" android:layout_marginTop="5dp">
+    <ToggleButton
+        android:id="@+id/toggleButton5"
+       android:layout_width="0dip"
+         android:layout_weight="1"
+        android:layout_height="30dp"
+       
+        android:background="@drawable/toggle_selector"
+        android:checked="true"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+    <ToggleButton
+        android:id="@+id/toggleButton6"
+        android:layout_width="0dip"
+         android:layout_weight="1"
+        android:layout_height="30dp"
+       
+        android:background="@drawable/toggle_selector"
+        android:checked="true"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+     <ToggleButton
+        android:id="@+id/toggleButton7"
+       android:layout_width="0dip"
+         android:layout_weight="1"
+         android:layout_height="30dp"
+       
+        android:background="@drawable/toggle_selector"
+        android:checked="true"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+      <ToggleButton
+        android:id="@+id/toggleButton8"
+      android:layout_width="0dip"
+         android:layout_weight="1"
+         android:layout_height="30dp"
+       
+        android:background="@drawable/toggle_selector"
+        android:checked="true"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+      <ToggleButton
+        android:id="@+id/toggleButton9"
+        android:layout_width="0dip"
+         android:layout_weight="1"
+        android:layout_height="30dp"
+       
+        android:background="@drawable/toggle_selector"
+        android:checked="true"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+</LinearLayout>
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" android:layout_marginTop="5dp">
+     <TextView
+           android:layout_width="0dip"
+          android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Maturity Benefit"
+        android:gravity="center"/>
+    
+</LinearLayout>
+<View
+     android:layout_width="fill_parent"
+          
+        android:layout_height="5dp"/>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" >
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="Sum Assured"/>
+     <TextView
+         android:id="@+id/matsa"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Sum Assured"/>
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"   
+        android:layout_height="1dp"/>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" >
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Bonus"/>
+     <EditText
+         android:id="@+id/bonrat"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="30dp" android:textSize="10sp"
+        android:text="40"/>
+      <TextView
+          android:id="@+id/bonus"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Bonus"/>
+</LinearLayout>
+<View
+        android:layout_width="fill_parent" 
+        android:layout_height="1dp"/>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" >
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="FAB"/>
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="0"/>
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"/>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@android:color/background_light" >
+     <TextView
+        android:layout_width="0dip"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="Total"/>
+     <TextView
+         android:id="@+id/total"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Total"/>
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"/>
+    </LinearLayout>
+    </ScrollView>

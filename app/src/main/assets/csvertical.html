@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <style>
+
+ul.svertical{
+width: 320px; /* width of menu */
+overflow: auto;
+background: black; /* background of menu */
+margin: 0;
+padding: 0;
+padding-top: 7px; /* top padding */
+list-style-type: none;
+}
+
+ul.svertical li{
+text-align: right; /* right align menu links */
+}
+
+ul.svertical li a{
+position: relative;
+display: inline-block;
+text-indent: 5px;
+overflow: hidden;
+background: rgb(127, 201, 68); /* initial background color of links */
+font: bold 28px Germand;
+text-decoration: none;
+padding: 5px;
+margin-bottom: 7px; /* spacing between links */
+color: black;
+-moz-box-shadow: inset -7px 0 5px rgba(114,114,114, 0.8); /* inner right shadow added to each link */
+-webkit-box-shadow: inset -7px 0 5px rgba(114,114,114, 0.8);
+box-shadow: inset -7px 0 5px rgba(114,114,114, 0.8);
+-moz-transition: all 0.2s ease-in-out; /* CSS3 transition of hover properties */
+-webkit-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+ul.svertical li a:hover{
+padding-right: 20px; /* add right padding to expand link horizontally to the left */
+color: black;
+background: rgb(153,249,75);
+-moz-box-shadow: inset -3px 0 2px rgba(114,114,114, 0.8); /* contract inner right shadow */
+-webkit-box-shadow: inset -3px 0 5px rgba(114,114,114, 0.8);
+box-shadow: inset -3px 0 5px rgba(114,114,114, 0.8);
+}
+
+ul.svertical li a:before{ /* CSS generated content: slanted right edge */
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+border-style: solid; 
+border-width: 70px 0 0 20px; /* Play around with 1st and 4th value to change slant degree */
+border-color: transparent transparent transparent black; /* change black to match the background color of the menu UL */
+
+}
+</style>
+</head>
+<body>
+<ul class="svertical">
+<li><a href="about.html">About</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="Release">Release Notes</a></li>
+<li><a href="#">Rate Us</a></li>
+<li><a href="#">Tell a Friend</a></li>
+</ul>
+</body>
+</html>

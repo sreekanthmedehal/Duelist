@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<item
+    android:id="@+id/Edit_Task"
+    android:title="Edit">
+</item>
+<item
+    android:id="@+id/Delete_Task"
+    android:title="Delete">
+</item>
+<item
+    android:id="@+id/Sms_Task"
+    android:title="Revival Quotation">
+    
+</item>
+<item
+    android:id="@+id/Surr_Task"
+    android:title="Surrender Quotation">
+    
+</item>
+<item
+    android:id="@+id/details_Task"
+    android:title="SMS Policy Details">
+</item>
+</menu>

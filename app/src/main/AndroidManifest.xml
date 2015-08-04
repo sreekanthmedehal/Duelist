@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sreekanth.duelist"
+    android:versionCode="25"
+    android:versionName="1.24" >
+
+
+
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ms"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Example"
+        android:uiOptions="splitActionBarWhenNarrow" >
+
+        <!-- android:theme="@android:style/Theme.DeviceDefault" -->
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PmActivity"
+            android:label="@string/title_activity_pm"
+            android:theme="@android:style/Theme.DeviceDefault"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="stateHidden" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sreekanth.duelist.F2Activity" />
+        </activity>
+        <activity
+            android:name=".BillActivity"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:label="@string/title_activity_bill"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PopupTheme" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sreekanth.duelist.MainActivity" />
+        </activity>
+        <activity
+            android:name=".pmdetail"
+            android:label="@string/PStatus"
+            android:parentActivityName=".PmActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sreekanth.duelist.PmActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sreekanth.duelist.F2Activity" />
+        </activity>
+        <activity
+            android:name=".SendSMSActivity"
+            android:label="@string/title_activity_send_sms" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sreekanth.duelist.BillActivity" />
+        </activity>
+        <activity
+            android:name=".NbActivity"
+            android:label="@string/title_activity_nb" >
+        </activity>
+        <activity
+            android:name=".GridViewActivity"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".GridViewActivity1"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AndroidListViewCursorAdaptorActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".FullScreenViewActivity"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".MainActivitynb"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Portal"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Merchant"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".PortalCLIA"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".F1Activity"
+            android:label="@string/title_feature1"
+            android:theme="@style/Theme.Example" />
+        <activity
+            android:name=".F2Activity"
+            android:label="@string/title_feature2"
+            android:theme="@style/Theme.Example" />
+        <activity
+            android:name=".F3Activity"
+            android:label="@string/title_feature3"
+            android:theme="@style/Theme.D1" />
+        <activity
+            android:name=".F4Activity"
+            android:label="@string/title_feature4"
+            android:theme="@style/Theme.D1" />
+        <activity
+            android:name=".DBRoulette"
+            android:label="@string/title_feature6"
+            android:theme="@style/Theme.D1" />
+        <activity
+            android:name=".F7Activity"
+            android:label="@string/title_feature7"
+            android:theme="@style/Theme.Example" />
+        <activity
+            android:name=".F8Activity"
+            android:label="@string/title_feature8"
+            android:theme="@style/Theme.Example" />
+        <activity
+            android:name=".F9Activity"
+            android:label="@string/title_feature9"
+            android:theme="@style/Theme.D1" />
+        <activity
+            android:name=".F10Activity"
+            android:label="@string/title_feature9"
+            android:theme="@style/Theme.D1" />
+        <activity
+            android:name=".medchart"
+            android:label="Medical Chart"
+            android:theme="@style/Theme.D1" />
+        <activity
+            android:name=".clubchart"
+            android:label="Club Chart"
+            android:theme="@style/Theme.D1" />
+        <activity
+            android:name=".nav"
+            android:label="NAV"
+            android:theme="@style/Theme.D1" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_about"
+            android:theme="@style/Theme.D1" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_search"
+            android:theme="@style/Theme.D1" />
+        <activity
+            android:name=".welcome"
+            android:label="@string/title_search"
+            android:theme="@style/Theme.D1" />
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-2ek55f8w1p2aqzi" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FrmActivity"
+            android:label="@string/title_feature1"
+            android:theme="@style/Theme.D1" />
+        <activity
+            android:name=".Portalrev"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".PortalbdList"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".PortalSurr"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".cloud"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".RevActivity"
+            android:parentActivityName=".PmActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sreekanth.duelist.PmActivity" />
+        </activity>
+        <activity
+            android:name=".PortalStatus"
+            android:label="@string/title_activity_portal_status" >
+        </activity>
+        <activity
+            android:name=".PortalrevList"
+            android:label="@string/title_activity_portal_status" >
+        </activity>
+        <activity
+            android:name=".PortalPolList"
+            android:label="@string/title_activity_portal_status" >
+        </activity>
+        <activity
+            android:name=".AlphabetListDemo"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".Update_profile"
+            android:label="@string/title_activity_update_profile" >
+        </activity>
+        <activity
+            android:name=".Agecalc"
+            android:label="@string/title_activity_agecalc"  >
+        </activity>
+        <activity
+            android:name=".MetroStatus"
+            android:label="@string/title_activity_metro_status" >
+        </activity>
+        <activity
+            android:name=".FirstPdf"
+            android:label="@string/title_activity_first_pdf" >
+        </activity>
+        <activity
+            android:name=".DoctorLocator"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".branch"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ActivateProduct"
+            android:label="@string/title_activity_activate_product" >
+        </activity>
+        <activity
+            android:name=".ActivityExpList"
+            android:label="Plan-Wise"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".BmExpList"
+            android:label="Premium_Month-wise"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".kitkat"
+            android:label="@string/title_activity_activate_product" >
+        </activity>
+        <activity
+            android:name=".Update"
+            android:label="@string/title_activity_update" >
+        </activity>
+        <activity
+            android:name=".AboutAdd"
+            android:label="@string/title_activity_about_add"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AboutEdit"
+            android:label="@string/title_activity_about_edit" >
+        </activity>
+        <activity
+            android:name=".ParsePDF"
+            android:label="@string/title_activity_parse_pdf" >
+        </activity>
+        <activity
+            android:name=".FileExplore"
+            android:label="Explore File" >
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".Forgot_regcode"
+            android:label="@string/title_activity_forgot_regcode" >
+        </activity>
+        <activity
+            android:name=".Otherbranchmenu"
+            android:label="@string/title_activity_otherbranchmenu" >
+        </activity>
+        <activity
+            android:name=".Otherbranchmenu1"
+            android:label="@string/title_activity_otherbranchmenu" >
+        </activity>
+        <activity
+            android:name=".Tabbed"
+            android:label="@string/title_activity_tabbed" >
+        </activity>
+        <activity
+            android:name=".BlankActvity"
+            android:label="@string/title_activity_blank_actvity" >
+        </activity>
+        <activity
+            android:name=".Gmail"
+            android:label="@string/title_activity_gmail" >
+        </activity>
+        <activity
+            android:name=".SettingsTheme"
+            android:label="@string/title_activity_setting_theme" >
+        </activity>
+        <activity
+            android:name=".FEActivity"
+            android:label="@string/title_activity_fe" >
+        </activity>
+        <activity
+            android:name=".Calcstore"
+            android:label="@string/title_activity_calcstore" >
+        </activity>
+        <activity android:name=".AgFrmActivity" >
+        </activity>
+        <activity
+            android:name=".SmsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ASKLICSMS"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SMS"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog" >
+        </activity>
+
+        <receiver
+            android:name=".SmsBroadcastReceiver"
+            android:exported="true" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Feedback"
+            android:label="@string/title_activity_feedback"
+            android:theme="@android:style/Theme.DeviceDefault" >
+        </activity>
+        <activity
+            android:name=".Paypremium"
+            android:label="@string/title_activity_paypremium" >
+        </activity>
+        <activity
+            android:name=".Devwebsite"
+            android:label="@string/title_activity_devwebsite" >
+        </activity>
+          <activity
+            android:name=".UserSettingActivity" />
+    </application>
+
+</manifest>

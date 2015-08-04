@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+<TabHost 
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        
+       
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none" 
+                android:layout_weight="1">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:layout_marginRight="0dip" />
+            </HorizontalScrollView>
+            <ImageButton android:id="@+id/add_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_fa_plus_square"/>
+            <ImageButton
+     android:id="@+id/btndelete"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_fa_minus_square" android:visibility="gone"/>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="370dp"
+            android:padding="2dp" />
+    </LinearLayout>
+
+</TabHost>
+
+ <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" android:visibility="visible" >
+<ImageButton
+    android:id="@+id/btnquot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="View quotation" android:src="@drawable/ic_fa_share_square_o"/>
+<ImageButton
+    android:id="@+id/btntotal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="Totals -  Mixing"
+    android:src="@drawable/ic_action_add_to_queue"/>
+<ImageButton
+    android:id="@+id/btnloaddata"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="Load Data"
+    android:src="@drawable/ic_action_storage"/>
+</LinearLayout>        
+</ScrollView>
+</RelativeLayout>

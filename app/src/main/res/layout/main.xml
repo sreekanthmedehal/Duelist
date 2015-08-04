@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<Button 
+      android:id="@+id/auth_button" 
+	  android:text="Link with Dropbox" 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+	  />
+
+    <LinearLayout
+        android:id="@+id/text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fileNameTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="71dp"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" >
+
+</TextView>
+		<LinearLayout
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    >
+		    <Button 
+		      android:id="@+id/roulette_button" 
+		      android:text="Download PM" 
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+	          android:layout_weight="1"
+		      />
+		    <Button 
+		      android:id="@+id/photo_button" 
+		      android:text="Upload PM" 
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+	          android:layout_weight="1"
+		      />
+		    <Button 
+		      android:id="@+id/count_button" 
+		      android:text="Count PM" 
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+	          android:layout_weight="1"
+		      />
+        </LinearLayout>
+        <!--                     Agency                      -->
+        <LinearLayout
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    >
+		    <Button 
+		      android:id="@+id/roulette_buttona" 
+		      android:text="Download AG" 
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+	          android:layout_weight="1"
+		      />
+		    <Button 
+		      android:id="@+id/photo_buttona" 
+		      android:text="Upload AG" 
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+	          android:layout_weight="1"
+		      />
+		    <Button 
+		      android:id="@+id/count_buttona" 
+		      android:text="Count AG" 
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+	          android:layout_weight="1"
+		      />
+        </LinearLayout>
+<!--                             //////                -->
+<!--                             Dues                -->
+<!--                            ///////                -->
+        <LinearLayout
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    >
+            <Button
+                android:id="@+id/roulette_buttonb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Download Dues" />
+
+            <Button
+                android:id="@+id/photo_buttonb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Upload Dues" />
+
+            <Button
+                android:id="@+id/count_buttonb"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Count Dues" />
+
+        </LinearLayout>
+<!--                            ///////                -->
+<!--                              NB                   -->
+<!--                            ///////                -->
+        <LinearLayout
+		    android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    >
+
+            <Button
+                android:id="@+id/roulette_buttonc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               android:layout_weight="1"
+                android:text="Download NB" />
+
+            <Button
+                android:id="@+id/photo_buttonc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Upload NB" />
+
+            <Button
+                android:id="@+id/count_buttonc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Count NB" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+	      

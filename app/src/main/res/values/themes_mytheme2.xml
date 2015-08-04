@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="mytheme2" parent="@style/_mytheme2"/>
+
+  <style name="_mytheme2" parent="android:Theme.Holo.Light">
+
+    <item name="android:editTextBackground">@drawable/mytheme2_edit_text_holo_light</item>
+
+    <item name="android:textColorHighlight">#9933b5e5</item>
+    <item name="android:textSelectHandleLeft">@drawable/mytheme2_text_select_handle_left</item>
+    <item name="android:textSelectHandleRight">@drawable/mytheme2_text_select_handle_right</item>
+    <item name="android:textSelectHandle">@drawable/mytheme2_text_select_handle_middle</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewmytheme2</item>
+
+    <item name="android:listChoiceIndicatorMultiple">@drawable/mytheme2_btn_check_holo_light</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/mytheme2_btn_radio_holo_light</item>
+
+    <item name="android:buttonStyle">@style/Buttonmytheme2</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonmytheme2</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/Spinnermytheme2</item>
+
+    <item name="android:progressBarStyleHorizontal">@style/ProgressBarmytheme2</item>
+
+    <item name="android:seekBarStyle">@style/SeekBarmytheme2</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarmytheme2</item>
+
+    <item name="android:ratingBarStyleIndicator">@style/RatingBarBigmytheme2</item>
+
+    <item name="android:ratingBarStyleSmall">@style/RatingBarSmallmytheme2</item>
+
+    <item name="android:buttonStyleToggle">@style/Togglemytheme2</item>
+
+    <item name="android:listChoiceBackgroundIndicator">@drawable/mytheme2_list_selector_holo_light</item>
+
+    <item name="android:activatedBackgroundIndicator">@drawable/mytheme2_activated_background_holo_light</item>
+
+    <item name="android:fastScrollThumbDrawable">@drawable/mytheme2_fastscroll_thumb_holo</item>
+
+  </style>
+
+</resources>

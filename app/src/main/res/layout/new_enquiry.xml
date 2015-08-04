@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical">
+   <Button android:text="Policy Status" android:layout_width="match_parent" android:layout_height="wrap_content"   android:id="@+id/button1"  ></Button>
+   <Button android:text="Surrender Quote" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/button2"  ></Button>
+   <Button android:text="Revival Quote"  android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/button3"  ></Button>
+   <Button android:text="LateFee" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/button4" android:visibility="gone"></Button>
+   <Button android:text="Loan Enquiry" android:id="@+id/button5" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone"></Button>
+
+   
+</LinearLayout>

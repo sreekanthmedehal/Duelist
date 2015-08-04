@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Revival Quotation"
+        />
+
+    <TextView
+        android:id="@+id/textView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView01"
+      
+        android:text="Enter Policy No"
+        />
+
+    <EditText
+        android:id="@+id/editText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView02"
+        android:layout_toRightOf="@+id/textView02"
+        android:background="#CCCCCC"
+        android:ems="6"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <RelativeLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button01"
+        android:layout_margin="5dp" >
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/textView02"
+        android:layout_alignBottom="@+id/textView02"
+        android:layout_alignParentRight="true"
+        android:text="Submit" />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="AgencyCode..." >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextKeywordsToBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Portal Password" />
+    <View style="@style/Divider"/>
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Agent" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLIA" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DevOff" />
+    </RadioGroup>
+    
+    <View style="@style/Divider"/>
+<RadioGroup
+    android:id="@+id/radioGroup2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RadioButton
+        android:id="@+id/radio0a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Standard" />
+
+    <RadioButton
+        android:id="@+id/radio1a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Professional" />
+
+    
+</RadioGroup>
+        <View style="@style/Divider"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonBlockByKeyword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/buttonCancelBlockKeyword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="Cancel" />
+    </LinearLayout>
+
+
+</LinearLayout>

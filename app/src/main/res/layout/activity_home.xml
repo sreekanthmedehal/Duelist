@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2011 Wglxy.com
+    Derived from Google IO Schedule App, Copyright 2010 Google, Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/db1_root"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout style="@style/TitleBar">
+        <ImageView style="@style/TitleBarLogo"
+            android:contentDescription="@string/description_logo"
+            android:src="@drawable/ms" />
+<TextView android:text="Policy Master" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    style="@style/TitleBarText" />
+        
+        <ImageView style="@style/TitleBarSeparator" />
+        <TextView android:id="@+id/verno" android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"  style="@style/TitleBarText"/>
+</LinearLayout>
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@drawable/bevel" 
+        android:orientation="horizontal"  android:gravity="center" android:layout_margin="10dp" android:id="@+id/llv">
+          <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_add"
+            android:src="@drawable/ic_fa_plus"
+            android:onClick="onClickAdd" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_about"
+            android:src="@drawable/ic_fa_info"
+            android:onClick="onClickAbout" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="@string/description_search"
+            android:src="@drawable/ic_fa_search"
+            android:onClick="onClickSearch" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="List"
+            android:src="@drawable/ic_fa_list"
+            android:onClick="onClickList" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Revival"
+            android:src="@drawable/ic_action_sum"
+            android:onClick="onClickRev" />
+         <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Settings"
+            android:src="@drawable/ic_action_action_settings"
+            android:onClick="onClickSet" />
+          <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Feedback"
+            android:src="@drawable/ic_action_feedback_icon"
+            android:onClick="onClickFeed" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@drawable/bevel" 
+        android:orientation="horizontal"  android:gravity="center" android:layout_margin="10dp" android:id="@+id/llv1">
+           <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Surrender"
+            android:src="@drawable/ic_action_cancel"
+            android:onClick="onClickSur" />
+           <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Utilities"
+            android:src="@drawable/ic_action_utilities"
+            android:onClick="onClickUtil" />
+            <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="AskLic"
+            android:src="@drawable/ic_fa_question"
+            android:onClick="onClickAskLic" />
+            <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Downloads"
+            android:src="@drawable/ic_fa_download"
+            android:onClick="onClickDown" />
+            <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Buy Online"
+            android:src="@drawable/ic_fa_credit_card"
+            android:onClick="onClickBuy" />
+             <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Doctor Locator"
+            android:src="@drawable/ic_action_doctor"
+            android:onClick="onClickDoc" />
+              <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Check For Updates"
+            android:src="@drawable/ic_action_action_shop"
+            android:onClick="onClickshop" />
+ </LinearLayout>
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@drawable/bevel" 
+        android:orientation="horizontal"  android:gravity="center" android:layout_margin="10dp" android:id="@+id/llv2">
+           <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Add Contact"
+            android:src="@drawable/ic_action_add_person"
+            android:onClick="onClickAPerson" />
+           
+           <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Agency Portal"
+            android:src="@drawable/ic_action_image_filter_1"
+            android:onClick="onClickAPortal" />
+    
+           <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="CLIAPortal"
+            android:src="@drawable/ic_action_image_filter_2"
+            android:onClick="onClickCPortal" /> 
+           
+           <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Office Locator"
+            android:src="@drawable/ic_fa_building"
+            android:onClick="onClickCBldg" /> 
+  <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="NAV"
+            android:src="@drawable/ic_action_coin_stacks_512"
+            android:onClick="onClickNav" /> 
+		
+		<ImageButton style="@style/TitleBarAction"
+            android:contentDescription="Developer Site"
+            android:src="@drawable/ic_action_action_language"
+            android:onClick="onClickSite" /> 
+    
+   </LinearLayout> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@drawable/bevel" 
+          android:gravity="center" android:layout_margin="10dp" android:id= "@+id/lgv" android:visibility="gone">
+ <GridView
+    android:id="@+id/gridView1"
+    android:numColumns="auto_fit"
+    android:gravity="center"
+    android:columnWidth="100dp"
+    android:stretchMode="columnWidth"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 
+</GridView>
+ 
+ 
+ </LinearLayout>
+  <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:orientation="horizontal"  android:layout_gravity="center" android:layout_margin="10dp">
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="50dp"   
+        android:layout_height="50dp"
+        android:background="@drawable/bgtogglehome"
+        android:button="@null"
+        android:textOff=""
+        android:textOn=""/>
+    </LinearLayout>
+ 
+ 
+  
+     
+     <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dip"
+    android:background="#000000" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+    
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   
+    android:padding="6dip" >
+  
+    
+    
+    
+    
+    
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@drawable/bevel" 
+          android:gravity="center" android:layout_margin="10dp">
+ 
+ 
+  <ExpandableListView
+                android:id="@+id/lvExp"
+               
+                android:layout_width="match_parent"  
+               android:layout_height="160dp"/> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </LinearLayout>
+    
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@drawable/bevel" 
+          android:gravity="center" android:layout_margin="10dp" android:visibility="gone">
+        <Button android:id="@+id/home_feedback"
+            style="@style/HomeButton"
+            android:onClick="onClickFeature"
+            android:text="Submit Feedback"
+            android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:gravity="center|center"
+            android:drawableLeft="@drawable/feedback_icon" android:visibility="gone"/>
+  
+</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@drawable/bevel" android:layout_margin="10dp"
+        android:visibility="gone">
+        <Button android:id="@+id/home_btn_feature3"
+            style="@style/HomeButton"
+            android:onClick="onClickFeature"
+            android:text="Agency Portal"
+            android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:gravity="center|center"
+            android:drawableLeft="@drawable/agents_button" android:visibility="gone"/>
+   </LinearLayout>
+
+   
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       android:visibility="gone">   
+         <Button
+            android:id="@+id/home_clia"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/clia_button"
+            android:onClick="onClickFeature"
+              android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="CLIA Portal" 
+        android:gravity="center|center" android:visibility="gone"/>
+    </LinearLayout>
+
+   
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       android:visibility="gone">
+
+        <Button
+            android:id="@+id/home_extra"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/extra_button"
+            android:onClick="onClickFeature"
+            android:text="Utilites"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:gravity="center|center" android:visibility="gone"/>
+     </LinearLayout>
+
+   <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       >
+        <TextView
+            
+            style="@style/HomeButton"
+             android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="Important Instructions\n Take Backup regularly to prevent data loss" 
+            android:gravity="center|center"/> 
+       
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       >
+        <Button
+            android:id="@+id/home_getpro"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/getpro_button"
+            android:onClick="onClickFeature"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="Get Pro Version" 
+            android:gravity="center|center"/> 
+       
+    </LinearLayout>
+   
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       android:visibility="gone">
+ <Button
+            android:id="@+id/home_mypol"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/main_menu"
+            android:onClick="onClickFeature"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="Main Menu" 
+            android:gravity="center|center" android:visibility="gone"/>
+ </LinearLayout>
+
+   
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       >
+    
+        <Button
+            android:id="@+id/home_reg"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/reg_button"
+            android:onClick="onClickFeature"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="Registration" 
+            android:gravity="center|center"/>
+     
+        </LinearLayout>
+
+   
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+      >
+      <Button
+            android:id="@+id/home_club"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/club_button"
+            android:onClick="onClickFeature"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="Club Membership"
+android:gravity="center|center"
+/> 
+       
+    </LinearLayout>
+ 
+
+   
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       android:visibility="gone">
+    
+
+        <Button
+            android:id="@+id/home_bank"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/bank_button"
+            android:onClick="onClickFeature"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="ASK LIC"
+            android:gravity="center|center" android:visibility="gone"/>
+        </LinearLayout>
+
+   
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       android:visibility="gone">
+      
+ 
+
+        <Button
+            android:id="@+id/home_down"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/down_button"
+            android:onClick="onClickFeature"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="Downloads/Forms"
+            android:gravity="center|center" android:visibility="gone"/>
+       
+    </LinearLayout>   
+
+   
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       android:visibility="gone">
+         <Button
+            android:id="@+id/home_pay"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/pay_button"
+            android:onClick="onClickFeature"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="Buy Online"
+            android:gravity="center|center" android:visibility="gone"/> 
+    
+       
+    </LinearLayout>
+   
+    
+
+   
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+      android:visibility="gone" >
+        <Button
+            android:id="@+id/home_doctor"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/doctor_button"
+            android:onClick="onClickFeature"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="Doctor Locator"
+android:gravity="center|center" android:visibility="gone"/>
+      
+   
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       android:visibility="gone">
+       <Button
+            android:id="@+id/home_office"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/office_button"
+            android:onClick="onClickFeature"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="Office Locator" 
+            android:gravity="center|center" android:visibility="gone"/>
+    
+       
+    </LinearLayout>
+   
+  
+
+   
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       android:visibility="gone">  
+        <Button
+            android:id="@+id/home_updates"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/update_button"
+            android:onClick="onClickFeature"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="Check for Updates"
+            android:gravity="center|center" android:visibility="gone"/>
+       
+    </LinearLayout>
+   
+
+   
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       >
+     
+ <Button android:id="@+id/home_btn_feature4"
+            style="@style/HomeButton"
+            android:onClick="onClickFeature"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:text="Premium Calculator\n(Under Construction)"
+            android:drawableLeft="@drawable/home_button4"
+            android:gravity="center|center"/>
+      
+       </LinearLayout>
+
+   
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+      android:visibility="gone" >
+        <Button
+            android:id="@+id/home_nav"
+            style="@style/HomeButton"
+            android:drawableLeft="@drawable/nav_button"   android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:onClick="onClickFeature"
+            android:text="NAV" 
+            android:gravity="center|center" android:visibility="gone"/>
+       
+    </LinearLayout>
+  
+
+   
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       android:visibility="gone">
+  
+ 
+        <Button
+            android:id="@+id/home_mssoft"
+            style="@style/HomeButton"
+             android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:onClick="onClickFeature"
+            android:text="Developer - Medehal" 
+            android:gravity="center|center" android:visibility="gone"/>
+       
+    </LinearLayout>
+    
+    
+    
+   <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:background="@drawable/bevel" android:layout_margin="10dp"
+       >
+ <Button android:id="@+id/home_eula"
+            style="@style/HomeButton"
+            android:onClick="onClickFeature"  
+          
+            android:text="End User Agreement"
+             android:textSize="14sp"
+            android:fontFamily="Arial"
+            android:gravity="center|center"/>
+    
+      
+       
+    </LinearLayout>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

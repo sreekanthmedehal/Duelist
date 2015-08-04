@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fillViewport="true">
+  <RelativeLayout 
+  		android:layout_width="match_parent"
+  		android:layout_height="wrap_content"  >
+  		
+  		<!--  Header  Starts-->
+  		
+  		<!--  Header Ends --> 
+  		<!-- Footer Start -->
+  		<LinearLayout android:id="@+id/footer"
+  		        android:orientation="vertical"
+  				android:layout_width="fill_parent"
+  				android:layout_height="90dip"
+  			
+  				android:layout_alignParentBottom="true">
+  		</LinearLayout>
+  		<!-- Footer Ends --> 
+  		
+  		<!-- Registration Form -->
+		<LinearLayout
+	
+		  android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="match_parent"
+		  android:padding="5dip"
+		  android:layout_below="@id/header">
+		    <!-- Agent Code Label -->
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		
+		  		android:text="Agent Code"/>
+		  <EditText android:id="@+id/reg_agcode" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="1dip"
+		  		android:singleLine="true"
+		  		
+		  		android:layout_marginBottom="1dip"
+		  		android:hint="5+4 Format"/>
+		  <!-- Full Name Label -->
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		
+		  		android:text="Full Name"/>
+		  <EditText android:id="@+id/reg_fullname" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="1dip"
+		  		android:singleLine="true"
+		  		
+		  		android:layout_marginBottom="1dip"
+		  		android:hint="Name...."/>
+		  <!--  Mobile Label -->
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		
+		  		android:text="Mobile No"/>
+		  <EditText android:id="@+id/reg_mobile" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="1dip"
+		  		android:singleLine="true"
+		  		
+		  		 android:inputType="number"
+		  		android:layout_marginBottom="1dip"
+		  		android:hint="Mobile No..."/>
+		    <!-- Branch Code Label -->
+ <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		
+		  		android:text="Designation"/>
+		  <Spinner
+		      android:id="@+id/spinner1"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginTop="1dip"
+		  		android:singleLine="true"
+		  		
+		  		android:layout_marginBottom="1dip" />
+
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		
+		  		android:text="Branch Code"/>
+		  <EditText android:id="@+id/reg_branchcode" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="1dip"
+		  		android:singleLine="true"
+		  		
+		  		android:layout_marginBottom="1dip"
+		  		android:hint="Branch Code"/>
+		  <!--  Email Label -->
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		
+		  		android:text="Email"/>
+		  <EditText android:id="@+id/reg_email" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="1dip"
+		  		android:singleLine="true"
+		  		
+		  		android:layout_marginBottom="1dip"
+		  		android:hint="Email...."/>
+		  <!--  Address Label -->
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		
+		  		android:text="Address"/>
+		  <EditText android:id="@+id/reg_address" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="1dip"
+		  		android:singleLine="true"
+		  		
+		  		android:layout_marginBottom="1dip"
+		  		android:hint = "Address"/>
+		  <!--  dealer code Label -->
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		
+		  		android:text="Dealer Code"/>
+		  <EditText android:id="@+id/reg_dealercode" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="1dip"
+		  		android:singleLine="true"
+		  		
+		  		android:layout_marginBottom="1dip"
+		  		android:hint="Dealer Code"
+		  		android:text="direct"/>
+		  <!-- Password Label -->
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		
+		  		android:text="Password"/>
+		  <EditText android:id="@+id/reg_password" 
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:password="true"
+		  		android:singleLine="true"
+		  		
+		  		android:layout_marginTop="1dip"
+		  		android:text = "Skip this step..."/>
+		  <!-- Result -->
+		  
+		  
+		  
+		  
+		  <!-- Register Button -->
+ <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		
+		  		android:text="Result"/>
+		  <WebView
+		      android:id="@+id/webView1"
+		      android:layout_width="match_parent"
+		      android:layout_height="100dp" 
+		     />
+		
+		  <Button android:id="@+id/btnRegister" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		
+		  		android:text="Register"/>
+		  <Button android:id="@+id/btnback" 
+		  		android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		
+		  		android:text="Back"/>
+		  <!-- Link to Login Screen -->
+		  
+		    
+		</LinearLayout>
+  		<!-- Registration Form Ends -->
+  		
+  		
+  </RelativeLayout>
+</ScrollView>

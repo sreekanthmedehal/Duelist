@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="Enter the policy number of recipient"
+        />
+
+    <EditText
+        android:id="@+id/txtPolicyNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"         
+        android:text="Select"
+        />
+ <View  
+        android:layout_width="fill_parent" 
+        android:layout_height="30dp"         
+    
+        />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+ <View  
+        android:layout_width="fill_parent" 
+        android:layout_height="30dp"         
+    
+        />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+ <View  
+        android:layout_width="fill_parent" 
+        android:layout_height="30dp"         
+    
+        />
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+      <TextView  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"         
+        android:text="Message" android:visibility="gone"
+        />
+    <EditText 
+        android:id="@+id/txtMessage"  
+        android:layout_width="fill_parent" 
+        android:layout_height="150px"
+        android:gravity="top"   android:visibility="gone"   
+        /> 
+         <View  
+        android:layout_width="fill_parent" 
+        android:layout_height="30dp"         
+    
+        />         
+    <Button 
+        android:id="@+id/btnSendSMS"  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
+        />    
+        <Button 
+        android:id="@+id/btnViewSMS"  
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:text="View All SMS"
+        />    
+</LinearLayout>

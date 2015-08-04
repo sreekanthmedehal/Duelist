@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+   
+
+        
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+            android:text="@string/Btn_april" 
+             android:textSize="13sp"
+            
+             
+             android:layout_margin="1.5dp"
+            android:onClick="NewApril"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+            android:text="@string/Btn_may"
+           
+            
+             android:textSize="13sp"
+             android:layout_margin="1.5dp"
+            android:onClick="NewMay" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+           
+            
+            android:text="@string/Btn_june" 
+             android:textSize="13sp"
+             android:layout_margin="1.5dp"
+            android:onClick="NewJune"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+          
+           
+            android:text="@string/Btn_july"
+            android:layout_margin="1.5dp"
+             android:textSize="13sp"
+            android:onClick="NewJuly" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+            android:text="@string/Btn_august" 
+            android:layout_margin="1.5dp"
+            
+           
+             android:textSize="13sp"
+             android:onClick="NewAugust"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+            android:text="@string/Btn_september"
+            android:layout_margin="1.5dp"
+           
+            
+             android:textSize="13sp"
+             android:onClick="NewSeptember" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+            android:text="@string/Btn_october"
+            android:layout_margin="1.5dp"
+           
+             android:textSize="13sp"
+             
+             android:onClick="NewOctober"
+             />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+            android:text="@string/Btn_november" 
+            
+           
+             android:textSize="13sp"
+             android:layout_margin="1.5dp"
+             android:onClick="NewNovember"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+            android:text="@string/Btn_december"
+           
+            
+             android:textSize="13sp"
+             android:layout_margin="1.5dp"
+             android:onClick="NewDecember" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+            android:text="@string/Btn_january" 
+           
+            
+             android:textSize="13sp"
+             android:layout_margin="1.5dp"
+             android:onClick="NewJanuary"/>
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+            android:text="@string/Btn_feb" 
+           
+            
+             android:textSize="13sp"
+             android:layout_margin="1.5dp"
+             android:onClick="NewFeb"/>
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="fill_parent"
+             android:textSize="13sp"
+            android:layout_height="31dp"
+            android:text="@string/Btn_mar" 
+           
+            
+            android:layout_margin="1.5dp"
+             android:onClick="NewMarch"/>
+
+</LinearLayout>

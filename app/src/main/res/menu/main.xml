@@ -1,0 +1,67 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:id="@+id/action_nblist"
+          android:title="@string/action_nblist"
+            android:icon="@drawable/ic_action_duelist"
+          android:showAsAction="ifRoom" 
+          android:visible="true"/>
+    
+    
+    <item android:id="@+id/search"
+          android:title="@string/search_title"
+          android:icon="@android:drawable/ic_menu_search"
+          android:showAsAction="ifRoom"
+          android:visible="true"
+          />
+     
+      
+    
+    <!-- More -->
+    <item
+        android:id="@+id/a_more"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_menu"
+        android:title="more">
+        <menu>
+
+            <!-- Refresh -->
+            <item
+                android:id="@+id/action_add"
+				android:icon="@android:drawable/ic_menu_add"
+                android:showAsAction="never"
+                android:title="Add"/>
+
+            <!-- Help -->
+            <item
+                android:id="@+id/action_help"
+                android:showAsAction="never"
+                android:title="help"/>
+          <item
+                android:id="@+id/Portal"
+                android:showAsAction="never"
+                android:title="Save PortalId"/>
+            <!-- Check updates -->
+          
+            
+            <item
+                android:id="@+id/action_plans"
+                android:showAsAction="never"
+                android:title="Plans"
+                />
+             <item
+                android:id="@+id/action_nav"
+                android:showAsAction="never"
+                android:title="NAV"
+                />
+              <item
+                android:id="@+id/action_gallery"
+                android:showAsAction="never"
+                android:title="Gallery"
+                />
+     
+        </menu>
+    </item>
+    
+   
+</menu>
+

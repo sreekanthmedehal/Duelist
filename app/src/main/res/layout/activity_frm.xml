@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+     
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Policy Status Enquiry"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#A4C639" />
+ <LinearLayout
+        android:layout_width="fill_parent" android:id="@+id/lll"
+        android:layout_height="wrap_content" android:orientation="horizontal" android:layout_below="@+id/textView01"
+        >
+    <TextView
+        android:id="@+id/textView02"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+      
+        android:text="Enter"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0099FF" />
+
+    <EditText
+        android:id="@+id/editText01"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="40dp"
+       
+        android:background="#CCCCCC"
+        android:ems="6"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button01"
+          android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        
+        android:background="#0099FF"
+        android:text="Submit"
+        android:textColor="#FFFFFF" />
+
+  </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lll"
+        android:layout_margin="5dp" >
+
+    </RelativeLayout>
+
+  
+  
+
+</RelativeLayout>

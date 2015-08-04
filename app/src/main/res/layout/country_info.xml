@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.sreekanth.duelist"
+     android:descendantFocusability="blocksDescendants"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="6dip" >
+
+              <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="0.8"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"  android:layout_gravity="center_vertical|center_horizontal">
+    <com.sreekanth.duelist.CustomFAB
+        android:id="@+id/customFAB1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+       android:onClick="OnClickCon"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+       
+        android:src="@drawable/ic_fa_user"
+        android:tint="@android:color/white"
+        custom:bg_color="@android:color/holo_blue_light" />
+</LinearLayout>
+              <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="2"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+     <LinearLayout android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+               <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="Id: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+           <TextView
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="" />     
+               
+               
+               
+               
+               </LinearLayout>
+               <LinearLayout android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+                <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="Name: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                 <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="" />
+                
+                  </LinearLayout>
+               <LinearLayout android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="Plan: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <TextView
+        android:id="@+id/region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:text="" />
+    
+    
+    
+      </LinearLayout>
+               <LinearLayout android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="Age: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+      <TextView
+        android:id="@+id/continent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="xxxxxxxxxxx" />
+     
+     
+     </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_weight="0.5"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"   android:layout_gravity="end|bottom" >
+ <com.sreekanth.duelist.CustomFAB
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/del_button"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:onClick="OnClickDel"
+        android:src="@drawable/ic_action_discard"
+        android:tint="@android:color/white"
+        custom:bg_color="@android:color/holo_blue_light" />
+        
+
+</LinearLayout>
+</LinearLayout>
+
+   
+
+   
+   
+   
+
+   
+
+   
+   
+
+   

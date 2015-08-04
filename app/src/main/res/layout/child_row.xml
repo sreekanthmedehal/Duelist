@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  
+    tools:context=".MyListAdapter" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/code_label"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/code"
+       android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+ </LinearLayout>
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="Policy No."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/name"
+       android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="United"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/population_label"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="Prem"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/population"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="200,0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/purfrom_label"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="FUP"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/purfrom"
+          android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/population"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="Anand"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/sa_label"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="Status"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/sa"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/purfrom"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="Sum Assured"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</LinearLayout>
+    <TextView
+        android:id="@+id/sbamount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sa"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="SbAmount"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/revamount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sbamount"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="RevAmount"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/remarks"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/revamount"
+        android:paddingLeft="4sp"
+        android:paddingRight="1sp"
+        android:text="Remarks"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>
