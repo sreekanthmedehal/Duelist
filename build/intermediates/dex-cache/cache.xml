@@ -2,25 +2,25 @@
 <items version="2" >
 
     <item
-        jar="/home/lic/AndroidStudioProjects/Duelist/app/libs/json_simple-1.1.jar"
+        jar="/home/lic/android-sdks/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
-        <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/json_simple-1.1-8681f65b84e90c273103e0b7268b72a7b0ec33a2.jar" />
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-94488358115845696edb7d94fda3b29f45fb1b1b.jar" />
     </item>
     <item
-        jar="/home/lic/AndroidStudioProjects/Duelist/app/libs/mysql-connector-java-5.1.28-bin.jar"
+        jar="/home/lic/AndroidStudioProjects/Duelist/app/libs/dropbox-android-sdk.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="181c7895a477078457cc1494ca1c3cece5328099">
-        <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/mysql-connector-java-5.1.28-bin-dd4bce8b53112130c23b33177e8d62c933e79a2e.jar" />
+        sha1="d92ccc13a8ba6cd8dd00fadb63194b47b50d335a">
+        <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/dropbox-android-sdk-19b8b22c0ced6407e210396ad30aad41b583c5a2.jar" />
     </item>
     <item
-        jar="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
+        jar="/home/lic/AndroidStudioProjects/Duelist/app/libs/itextpdf-5.5.1.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/classes-772fd1967783dbdbc17991c0bcfde6c93787c24c.jar" />
+        sha1="081fee01fb0d7da7665261ac0e005f583985087d">
+        <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/itextpdf-5.5.1-ec6dee346224d62ec7a4db4d06ef2105cbc1008f.jar" />
     </item>
     <item
         jar="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/libs/internal_impl-22.1.1.jar"
@@ -37,25 +37,25 @@
         <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/joda-time-2.2-2b3bf0bf960a8e594fe9da62349d9c25b93e7fa7.jar" />
     </item>
     <item
-        jar="/home/lic/android-sdks/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
+        jar="/home/lic/AndroidStudioProjects/Duelist/app/libs/mysql-connector-java-5.1.28-bin.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-94488358115845696edb7d94fda3b29f45fb1b1b.jar" />
+        sha1="181c7895a477078457cc1494ca1c3cece5328099">
+        <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/mysql-connector-java-5.1.28-bin-dd4bce8b53112130c23b33177e8d62c933e79a2e.jar" />
     </item>
     <item
-        jar="/home/lic/AndroidStudioProjects/Duelist/app/libs/itextpdf-5.5.1.jar"
+        jar="/home/lic/AndroidStudioProjects/Duelist/app/libs/json_simple-1.1.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="081fee01fb0d7da7665261ac0e005f583985087d">
-        <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/itextpdf-5.5.1-ec6dee346224d62ec7a4db4d06ef2105cbc1008f.jar" />
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/json_simple-1.1-8681f65b84e90c273103e0b7268b72a7b0ec33a2.jar" />
     </item>
     <item
-        jar="/home/lic/AndroidStudioProjects/Duelist/app/libs/dropbox-android-sdk.jar"
+        jar="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/jars/classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="d92ccc13a8ba6cd8dd00fadb63194b47b50d335a">
-        <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/dropbox-android-sdk-19b8b22c0ced6407e210396ad30aad41b583c5a2.jar" />
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/home/lic/AndroidStudioProjects/Duelist/app/build/intermediates/pre-dexed/debug/classes-772fd1967783dbdbc17991c0bcfde6c93787c24c.jar" />
     </item>
     <item
         jar="/home/lic/AndroidStudioProjects/Duelist/app/libs/httpmime-4.0.3.jar"
